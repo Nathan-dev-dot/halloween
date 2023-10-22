@@ -1,0 +1,9 @@
+<div id="container">
+    <app-title title="Vous avez trouvé un code ?"></app-title>
+    <div id="codeContainer">
+        <app-input type="text" placeHolder="code" label="Code" (change)="setCode($event)"></app-input>
+
+    </div>
+    <app-big-button label="Vérifier votre réponse" (clickEvent)="sendCode()"></app-big-button>
+
+</div>

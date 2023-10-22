@@ -9,6 +9,7 @@ import {HttpClientModule} from "@angular/common/http";
 import { TitleComponent } from './components/title/title.component';
 import {InputComponent} from "./components/input/input.component";
 import {BigButtonComponent} from "./components/big-button/big-button.component";
+import { EnigmaComponent } from './pages/enigma/enigma.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {BigButtonComponent} from "./components/big-button/big-button.component";
     CreateGroupComponent,
     TitleComponent,
     InputComponent,
-    BigButtonComponent
+    BigButtonComponent,
+    EnigmaComponent
   ],
   imports: [
     BrowserModule,
