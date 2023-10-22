@@ -1,0 +1,5 @@
+<div id="container">
+    <app-title [title]="'Créer votre groupe'"></app-title>
+    <app-input type="text" placeHolder="Nom du group" label="Nom du group" (change)="setGroupName($event)"></app-input>
+    <app-big-button label="Commencer votre enquête" (clickEvent)="sendGroupName()"></app-big-button>
+</div>

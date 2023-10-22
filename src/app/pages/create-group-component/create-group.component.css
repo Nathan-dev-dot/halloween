@@ -1,0 +1,18 @@
+#containerName{
+    display: flex;
+    flex-direction: column;
+}
+
+#containerName > input {
+    max-width: 250px;
+}
+
+#container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    margin: auto;
+}

@@ -1,0 +1,24 @@
+#container{
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+
+#label{
+  color: #AB6B51;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#input{
+  min-width: 85vw;
+  background: rgba(171, 107, 81, 0.1);
+  border: 1px rgba(171, 107, 81, 0.2) solid;
+  border-radius: 10px;
+  min-height: 40px;
+  padding-left: 17px;
+}
+
+#input::placeholder{
+  color: #AB6B51;
+}
