@@ -10,7 +10,7 @@ import {Subscription} from "rxjs";
 })
 export class CreateGroupComponent implements OnDestroy{
 
-  group: Group = new Group("", "");
+  group: Group = new Group("");
   private readonly subscribers: Subscription[] = []
 
   constructor(private readonly groupService: GroupService) { }
@@ -26,7 +26,8 @@ export class CreateGroupComponent implements OnDestroy{
   }
 
   setGroupName(groupName: string) {
-    this.group.name = groupName;
+    if(typeof  groupName == 'string')
+      this.group.name = groupName;
   }
 
   ngOnDestroy(): void {
