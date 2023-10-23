@@ -10,7 +10,7 @@
   font-size: 16px;
 }
 
-#input{
+.input{
   min-width: 85vw;
   background: rgba(171, 107, 81, 0.1);
   border: 1px rgba(171, 107, 81, 0.2) solid;
@@ -18,6 +18,16 @@
   min-height: 40px;
   padding-left: 17px;
 }
+
+.input_error{
+  min-width: 85vw;
+  background: rgba(255, 0, 0, 0.1);
+  border: 1px rgba(255, 0, 0, 0.2) solid;
+  border-radius: 10px;
+  min-height: 40px;
+  padding-left: 17px;
+}
+
 
 #input::placeholder{
   color: #AB6B51;

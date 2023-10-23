@@ -1,1 +1,1 @@
-<button class="primary-button" (click)="emit()">{{label}}</button>
+<button [ngClass]="error ? 'primary-button-error' : 'primary-button'" (click)="emit()">{{label}}</button>

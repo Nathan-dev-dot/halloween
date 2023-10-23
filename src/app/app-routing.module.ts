@@ -11,8 +11,6 @@ export const pages = {
   enigma: 'enigma',
 }
 
-export const pagesPaths = {
-}
 
 const routes: Routes = [
   {path: pages.createGroup, component: CreateGroupComponent},

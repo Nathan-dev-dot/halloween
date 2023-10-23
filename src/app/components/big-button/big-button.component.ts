@@ -7,6 +7,7 @@ import {Component, EventEmitter, Input, Output} from '@angular/core';
 })
 export class BigButtonComponent {
   @Input() label: string = '';
+  @Input() error: boolean = false;
 
   @Output() clickEvent: EventEmitter<boolean> = new EventEmitter<boolean>()
   emit() {

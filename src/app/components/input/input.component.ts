@@ -12,6 +12,7 @@ export class InputComponent {
   @Input() type: string = '';
   @Input() value: string = '';
   @Input() isSuffix: boolean = false;
+  @Input() error: boolean = false;
 
   @Output() change = new EventEmitter<string>();
 

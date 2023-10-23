@@ -14,10 +14,15 @@ export class GroupService {
     private readonly httpUtils: HttpUtils,
   ) {}
 
-  private readonly url: string = this.httpUtils.baseUrl();
+  private readonly url: string = this.httpUtils.baseUrl() ;
 
   createGroup(group: Group): Observable<Group> {
     const body = JSON.stringify(group);
-    return this.http.post<Group>(this.url, body)
+    console.log(body)
+    return this.http.post<Group>(`${this.url}/group`, body, {
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
   }
 }

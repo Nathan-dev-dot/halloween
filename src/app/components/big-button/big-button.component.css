@@ -8,3 +8,14 @@
   font-weight: bold;
   font-size: 16px;
 }
+
+.primary-button-error{
+  background-color: #913939;
+  width: 90vw;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  color: #FFF2E9;
+  font-weight: bold;
+  font-size: 16px;
+}
